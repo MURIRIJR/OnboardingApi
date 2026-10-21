@@ -1,3 +1,12 @@
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.AssemblyInfo.cs
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.sourcelink.json
 C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\appsettings.json
 C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\OnboardingApi.staticwebassets.endpoints.json
@@ -102,14 +111,6 @@ C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\ru\Microsof
 C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\PC\Documents\Intern Project\OnboardingApi\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.csproj.AssemblyReference.cache
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.AssemblyInfoInputs.cache
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.AssemblyInfo.cs
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.csproj.CoreCompileInputs.cache
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\OnboardingApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\PC\Documents\Intern Project\OnboardingApi\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
