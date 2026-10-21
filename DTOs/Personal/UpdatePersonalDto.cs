@@ -17,4 +17,18 @@ public class UpdatePersonalDto
     public string MaritalStatus { get; set; } = string.Empty;
 
     public string Nationality { get; set; } = string.Empty;
+
+    public string EmploymentStatus { get; set; } = string.Empty;
+
+    public string IdType { get; set; } = string.Empty;
+
+    public string IdNumber { get; set; } = string.Empty;
+
+    public DateTime? IdExpiryDate { get; set; }
+
+    public string Email { get; set; } = string.Empty;
+
+    public string MobileNumber { get; set; } = string.Empty;
+
+    public string Occupation { get; set; } = string.Empty;
 }
