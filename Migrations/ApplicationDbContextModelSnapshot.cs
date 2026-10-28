@@ -38,6 +38,10 @@ namespace OnboardingApi.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("AddressType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("CityTown")
                         .IsRequired()
                         .HasColumnType("text");
@@ -45,6 +49,9 @@ namespace OnboardingApi.Migrations
                     b.Property<string>("Country")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("DistrictState")
                         .IsRequired()
@@ -64,6 +71,9 @@ namespace OnboardingApi.Migrations
                     b.Property<string>("SuburbArea")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
@@ -92,6 +102,9 @@ namespace OnboardingApi.Migrations
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<DateTime?>("SubmittedDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("timestamp with time zone");
