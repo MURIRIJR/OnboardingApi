@@ -51,6 +51,18 @@ public class OnboardingsController : ControllerBase
         return NoContent();
     }
 
+    // POST /api/personals/{personalId}/submit  (the URL the Angular app calls)
+    [HttpPost("~/api/personals/{personalId:int}/submit")]
+    public async Task<IActionResult> Submit(int personalId)
+    {
+        var submitted = await _service.SubmitAsync(personalId);
+
+        if (!submitted)
+            return NotFound();
+
+        return Ok();
+    }
+
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

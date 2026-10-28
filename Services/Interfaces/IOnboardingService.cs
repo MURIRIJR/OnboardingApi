@@ -12,5 +12,7 @@ public interface IOnboardingService
 
     Task<bool> UpdateAsync(int id, UpdateOnboardingDto dto);
 
+    Task<bool> SubmitAsync(int personalId);
+
     Task<bool> DeleteAsync(int id);
 }
