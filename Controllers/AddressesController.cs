@@ -32,6 +32,17 @@ public class AddressesController : ControllerBase
         return Ok(address);
     }
 
+    [HttpGet("personal/{personalId}")]
+    public async Task<IActionResult> GetByPersonalId(int personalId)
+    {
+        var address = await _service.GetByPersonalIdAsync(personalId);
+
+        if (address == null)
+            return NotFound();
+
+        return Ok(address);
+    }
+
     [HttpPost]
     public async Task<IActionResult> Create(CreateAddressDto dto)
     {
@@ -41,7 +52,9 @@ public class AddressesController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update(int id, UpdateAddressDto dto)
+    public async Task<IActionResult> Update(
+        int id,
+        UpdateAddressDto dto)
     {
         var updated = await _service.UpdateAsync(id, dto);
 

@@ -8,6 +8,8 @@ public interface IAddressService
 
     Task<AddressResponseDto?> GetByIdAsync(int id);
 
+    Task<AddressResponseDto?> GetByPersonalIdAsync(int personalId);
+
     Task<AddressResponseDto> CreateAsync(CreateAddressDto dto);
 
     Task<bool> UpdateAsync(int id, UpdateAddressDto dto);

@@ -22,6 +22,7 @@ public class AddressService : IAddressService
     public async Task<IEnumerable<AddressResponseDto>> GetAllAsync()
     {
         var addresses = await _repository.GetAllAsync();
+
         return _mapper.Map<IEnumerable<AddressResponseDto>>(addresses);
     }
 
@@ -35,18 +36,35 @@ public class AddressService : IAddressService
         return _mapper.Map<AddressResponseDto>(address);
     }
 
+    public async Task<AddressResponseDto?> GetByPersonalIdAsync(int personalId)
+    {
+        var addresses = await _repository.GetAllAsync();
+
+        var address = addresses.FirstOrDefault(a =>
+            a.PersonalId == personalId);
+
+        if (address == null)
+            return null;
+
+        return _mapper.Map<AddressResponseDto>(address);
+    }
+
     public async Task<AddressResponseDto> CreateAsync(CreateAddressDto dto)
     {
         var address = _mapper.Map<Address>(dto);
 
-        var createdAddress = await _repository.CreateAsync(address);
+        var createdAddress =
+            await _repository.CreateAsync(address);
 
         return _mapper.Map<AddressResponseDto>(createdAddress);
     }
 
-    public async Task<bool> UpdateAsync(int id, UpdateAddressDto dto)
+    public async Task<bool> UpdateAsync(
+        int id,
+        UpdateAddressDto dto)
     {
-        var address = await _repository.GetByIdAsync(id);
+        var address =
+            await _repository.GetByIdAsync(id);
 
         if (address == null)
             return false;
@@ -60,7 +78,8 @@ public class AddressService : IAddressService
 
     public async Task<bool> DeleteAsync(int id)
     {
-        var address = await _repository.GetByIdAsync(id);
+        var address =
+            await _repository.GetByIdAsync(id);
 
         if (address == null)
             return false;
