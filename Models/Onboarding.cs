@@ -14,5 +14,7 @@ public class Onboarding
 
     public DateTime UpdatedDate { get; set; } = DateTime.UtcNow;
 
+    public DateTime? SubmittedDate { get; set; }
+
     public Personal? Personal { get; set; }
 }

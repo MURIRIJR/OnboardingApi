@@ -6,6 +6,9 @@ public class Address
 
     public int PersonalId { get; set; }
 
+    // RESIDENTIAL or POSTAL
+    public string AddressType { get; set; } = "RESIDENTIAL";
+
     public string AddressLine1 { get; set; } = string.Empty;
 
     public string AddressLine2 { get; set; } = string.Empty;
@@ -21,6 +24,10 @@ public class Address
     public string Country { get; set; } = string.Empty;
 
     public string ResidentialStatus { get; set; } = string.Empty;
+
+    public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
+
+    public DateTime UpdatedDate { get; set; } = DateTime.UtcNow;
 
     public Personal? Personal { get; set; }
 }
