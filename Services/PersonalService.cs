@@ -39,6 +39,17 @@ public class PersonalService : IPersonalService
     {
         var personal = _mapper.Map<Personal>(dto);
 
+        personal.DateOfBirth = DateTime.SpecifyKind(
+            personal.DateOfBirth,
+            DateTimeKind.Utc);
+
+        if (personal.IdExpiryDate.HasValue)
+        {
+            personal.IdExpiryDate = DateTime.SpecifyKind(
+                personal.IdExpiryDate.Value,
+                DateTimeKind.Utc);
+        }
+
         var createdPersonal = await _repository.CreateAsync(personal);
 
         return _mapper.Map<PersonalResponseDto>(createdPersonal);
@@ -52,6 +63,17 @@ public class PersonalService : IPersonalService
             return false;
 
         _mapper.Map(dto, personal);
+
+        personal.DateOfBirth = DateTime.SpecifyKind(
+            personal.DateOfBirth,
+            DateTimeKind.Utc);
+
+        if (personal.IdExpiryDate.HasValue)
+        {
+            personal.IdExpiryDate = DateTime.SpecifyKind(
+                personal.IdExpiryDate.Value,
+                DateTimeKind.Utc);
+        }
 
         await _repository.UpdateAsync(personal);
 
